@@ -2,25 +2,24 @@
     padding: 0;
     margin: 0;
 }
-header,body{
+header,bodY,footer{
     background-color: #F7F2EB;
     color: #3C352B;
     height: 80px;
     width: 100%;
-    top: 0;
+    top: 0px;
 }
 
 header{
     position: fixed;
-    padding: 20px;
     box-sizing: border-box;
     z-index: 1000; /* 欄位顯示於最上層 */
     
 }
 header h1{/*logo位置設定*/
     position: absolute;
-    left: 5vw;
-    line-height: 40px;
+    left: 3vw;
+    line-height: 80px;
     /* 新增.標題logo.隱藏標題名稱
     background-image: url(coworker_2_images/???);
     background-repeat: no-repeat;
@@ -32,12 +31,12 @@ header h1{/*logo位置設定*/
 header .bell{
     position: absolute;
     right: 2vw;
-    line-height: 40px;/*置中於header*/
+    line-height: 80px;/*置中於header*/
 }
 header ul{
     position: absolute;
     right: 5vw;
-    line-height: 80px;
+    line-height: 120px;
     font-size: 14px;
 }
 header li{
@@ -55,7 +54,7 @@ header a:hover{
 header hr {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     color:  #3C352B;
 }
 
@@ -164,6 +163,14 @@ header hr {
 .btn:hover{
     background-color: #8c2c00c7;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    background-color: #3C352B;
+    color: #F7F2EB;
+    font-size: 12px;
 }
 
 .bottom-bar {
